@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Aos from "aos";
+import "./App.css";
+import WipeStudio from "./components/WipeStudio";
+import "aos/dist/aos.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import { useEffect } from "react";
+import Integer from "./components/Integer";
+import Featured from "./components/Featured";
+import Partner from "./components/Partner";
+import ProjectManagment from "./components/ProjectManagment";
+import TeamStars from "./components/TeamStars";
 function App() {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+      duration: 3000,
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <>
+        <Featured />
+        <Integer />
+        <WipeStudio />
+        <Partner />
+        <ProjectManagment />
+        <TeamStars />
+      </>
+    </>
   );
 }
 

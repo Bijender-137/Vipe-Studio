@@ -1,38 +1,210 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+    list-style-type: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ff_inter {
+    font-family: 'Inter', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: Konexy Personal Use;
+    src: url("./assets/fonts/KonexyPersonalUse.otf");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: Gilroy400;
+    src: url("./assets/fonts/gilroy/Gilroy-Regular.ttf");
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+    font-family: Gilroy600;
+    src: url("./assets/fonts/gilroy/Gilroy-SemiBold.ttf");
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+    font-family: Gilroy700;
+    src: url("./assets/fonts/gilroy/Gilroy-Bold.ttf");
+}
+
+.ff_konexy {
+    font-family: Konexy Personal Use;
+}
+
+.ff_gilroy400 {
+    font-family: Gilroy400;
+}
+
+.ff_gilroy600 {
+    font-family: Gilroy600;
+}
+
+.ff_gilroy700 {
+    font-family: Gilroy700;
+}
+
+:root {
+    --fs-xsm: 16px;
+    --fs-medium: 24px;
+    --fs-3xl: 35px;
+    --fs-4xl: 40px;
+    --fs-large: 48px;
+}
+
+.fs_xsm {
+    font-size: var(--fs-xsm);
+}
+
+.fs_medium {
+    font-size: var(--fs-medium);
+}
+
+.fs_3xl {
+    font-size: var(--fs-3xl);
+}
+
+.fs_4xl {
+    font-size: var(--fs-4xl);
+}
+
+.fs_large {
+    font-size: var(--fs-large);
+}
+
+.bg_img_section {
+    background-image: url("./assets/img/png/bg_img_section.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn_schedule {
+    background: #6022EA;
+    border-radius: 80px;
+    padding: 10px 24px;
+    outline: none !important;
+    transition: 0.2s ease-in-out;
+}
+
+.btn_schedule:hover {
+    background-color: #FEB168;
+}
+
+.bg_clr_black {
+    background: #000000;
+    border-radius: 25.9381px;
+    padding: 27px 33px !important;
+}
+
+.zn_1 {
+    z-index: 1 !important;
+    position: relative;
+}
+
+.bg_shadow {
+    background: #bc03ff;
+    width: 190px !important;
+    height: 210px !important;
+    filter: blur(110px);
+}
+
+.right_shadow {
+    right: 20px;
+    bottom: 0;
+}
+
+.learn_more_clr {
+    color: #6022EA;
+    transition: 0.6s ease-in-out;
+}
+
+
+.box_shadow {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    transition: 0.6s ease-in-out;
+}
+
+.box_shadow:hover {
+    box-shadow: 0px 20px 60.5714px #E5E9F6;
+}
+
+.box_shadow:hover .btn_clr {
+    color: #FEB168;
+}
+
+.featured_sec_bg_clr {
+    background-color: #F6F6F6;
+}
+
+.img_width_160 {
+    max-width: 120px;
+}
+
+.text_opacity_7 {
+    opacity: 0.7;
+}
+
+.btn_explore {
+    padding: 10px 24px;
+    background: #6022EA;
+    box-shadow: 0px 4px 20px rgba(96, 34, 234, 0.2);
+    border-radius: 80px;
+    outline: none;
+    transition: 0.8s ease-in-out;
+}
+
+.text_blue {
+    color: #6022EA;
+}
+
+/* .img_overflow {
+    position: static;
+} */
+
+.btn_explore:hover {
+    background-color: #FEB168;
+}
+
+@media (max-width:575.98px) {
+    :root {
+        --fs-xsm: 14px;
+        --fs-medium: 20px;
+        --fs-3xl: 22px;
+        --fs-4xl: 25px;
+        --fs-large: 27px;
+    }
+}
+
+@media (min-width:576px) {
+    :root {
+        --fs-xsm: 16px;
+        --fs-medium: 22px;
+        --fs-3xl: 28px;
+        --fs-4xl: 30px;
+        --fs-large: 40px;
+    }
+}
+
+@media (min-width:992px) {
+    :root {
+        --fs-xsm: 16px;
+        --fs-medium: 24px;
+        --fs-3xl: 35px;
+        --fs-4xl: 40px;
+        --fs-large: 48px;
+    }
+
+    .img_width_160 {
+        max-width: 140px;
+    }
+
+    .img_overflow {
+        position: absolute !important;
+    }
 }
