@@ -5,7 +5,7 @@ const TeamStars = () => {
   return (
     <>
       <section className="py-5 featured_sec_bg_clr position-relative overflow- hidden ">
-        <Container className="py-xxl-5">
+        <Container className="py-xl-5">
           <Row className="flex-column-reverse flex-lg-row  justify-content-center align-items-center align-items-lg-start">
             <Col lg={6} data-aos="fade-right">
               <div className="pt-4 pt-lg-5">

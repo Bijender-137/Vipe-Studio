@@ -7,7 +7,7 @@ import Partner_4 from "../assets/img/svg/partner_img_4.svg";
 import Partner_5 from "../assets/img/svg/partner_img_5.svg";
 import Partner_6 from "../assets/img/svg/partner_img_6.svg";
 import Slider from "react-slick";
-
+import Marquee from "react-fast-marquee";
 const Partner = () => {
   var settings = {
     dots: false,
@@ -17,7 +17,7 @@ const Partner = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows:false,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1400,
@@ -80,7 +80,7 @@ const Partner = () => {
               </div>
             </Col>
           </Row>
-          <Slider {...settings} className="mt-4">
+          {/* <Slider {...settings} className="mt-4">
               <div>
                 <img className="img_width_160" src={Partner_1} alt="Partner_1" />
               </div>
@@ -115,7 +115,17 @@ const Partner = () => {
               <div>
                 <img className="img_width_160" src={Partner_6} alt="Partner_6" />
               </div>
-          </Slider>
+          </Slider> */}
+          <Marquee>
+            <div className="d-flex justify-content-center align-items-center mt-4">
+              <img className="img_width_160 mx-5" src={Partner_1} alt="Partner_1" />
+              <img className="img_width_160 mx-5" src={Partner_2} alt="Partner_1" />
+              <img className="img_width_160 mx-5" src={Partner_3} alt="Partner_1" />
+              <img className="img_width_160 mx-5" src={Partner_4} alt="Partner_1" />
+              <img className="img_width_160 mx-5" src={Partner_5} alt="Partner_1" />
+              <img className="img_width_160 mx-5" src={Partner_6} alt="Partner_1" />
+            </div>
+          </Marquee>
         </Container>
       </section>
     </>
