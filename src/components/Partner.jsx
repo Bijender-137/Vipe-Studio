@@ -12,7 +12,7 @@ const Partner = () => {
       <section className="py-5 overflow-hidden featured_sec_bg_clr">
         <Container>
           <Row>
-            <Col lg={6}>
+            <Col xxl={6}>
               <div data-aos="fade-down">
                 <h2 className="ff-normal ff_konexy fs_large">
                   Long Term WordPress Partner
@@ -25,7 +25,7 @@ const Partner = () => {
               </div>
             </Col>
           </Row>
-          <Row className="align-items-center justify-content-center">
+          {/* <Row className="align-items-center justify-content-center">
             <Col xs={6} sm={4} md={3} xl={2} className="mt-4" data-aos="fade-right">
               <img className="img_width_160" src={Partner_1} alt="Partner_1" />
             </Col>
@@ -44,8 +44,28 @@ const Partner = () => {
             <Col xs={6} sm={4} md={3} xl={2} className="mt-4" data-aos="fade-left">
               <img className="img_width_160" src={Partner_6} alt="Partner_6" />
             </Col>
-           
-          </Row>
+          </Row> */}
+          <marquee>
+            <div className="d-flex justify-content-between align-items-center mt-4 gap-5">
+              <div>
+                <img className="img_width_160" src={Partner_1} alt="Partner_1" />
+              </div>
+              <div>
+              <img className="img_width_160" src={Partner_2} alt="Partner_2" />              </div>
+              <div>
+                <img className="img_width_160" src={Partner_3} alt="Partner_3" />
+              </div>
+              <div>
+                <img className="img_width_160" src={Partner_4} alt="Partner_4" />
+              </div>
+              <div>
+                <img className="img_width_160" src={Partner_5} alt="Partner_5" />
+              </div>
+              <div>
+                <img className="img_width_160" src={Partner_6} alt="Partner_6" />
+              </div>
+            </div>
+          </marquee>
         </Container>
       </section>
     </>

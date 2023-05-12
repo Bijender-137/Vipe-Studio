@@ -10,6 +10,8 @@ import Featured from "./components/Featured";
 import Partner from "./components/Partner";
 import ProjectManagment from "./components/ProjectManagment";
 import TeamStars from "./components/TeamStars";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 function App() {
   useEffect(() => {
     Aos.init({

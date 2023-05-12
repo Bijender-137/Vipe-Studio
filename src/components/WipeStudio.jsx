@@ -8,8 +8,8 @@ const WipeStudio = () => {
       <section className="py-3 py-sm-5 position-relative bg-black overflow-hidden mt-md-5">
         <Container>
           <Row className="pb-sm-5">
-            <Col sm={12} lg={5} >
-              <div data-aos="fade-right" >
+            <Col sm={12} lg={5}>
+              <div data-aos="fade-right">
                 <h1 className=" fs_4xl ff_konexy fw-normal text-white">
                   All Vipe Studio WordPress services include:
                 </h1>
@@ -61,7 +61,7 @@ const WipeStudio = () => {
                   </div>
                 </Col>
                 <Col sm={6} data-aos="fade-left">
-                  <div className=" mt-4 mt-md-0 " >
+                  <div className=" mt-4 mt-md-0 ">
                     <p className="fw-semibold fs_medium ff_gilroy600 text-white">
                       By Services
                     </p>
@@ -112,7 +112,7 @@ const WipeStudio = () => {
             <div className="bg_clr_black zn_1 mt-3 mt-sm-5 ">
               <Row>
                 <Col sm={12} lg={4}>
-                  <div  data-aos="fade-right">
+                  <div data-aos="fade-right">
                     <p className="ff_konexy fw-semibold fs_3xl text-white">
                       Not Sure which service you need yet?{" "}
                     </p>
@@ -121,8 +121,11 @@ const WipeStudio = () => {
                     </button>
                   </div>
                 </Col>
-                <Col sm={12} md={6} lg={4} >
-                  <div className="pt-2  d-flex justify-content-end flex-column mt-4 mt-lg-0" data-aos="fade-up">
+                <Col sm={12} md={6} lg={4}>
+                  <div
+                    className="pt-2  d-flex justify-content-end flex-column mt-4 mt-lg-0"
+                    data-aos="fade-up"
+                  >
                     <p className="ff_gilroy700 fw-bold fs_medium text-white">
                       20-m free consultation that will help us identifyif you
                       need{" "}
@@ -168,7 +171,7 @@ const WipeStudio = () => {
                         </svg>
                       </div>
                       <p className="ff_gilroy400 fw-normal fs_xsm text-white mb-0 ms-3">
-                        Technical Description & Discovery
+                        Custom WordPress Development
                       </p>
                     </div>
                     <div className="d-flex align-items-center mt-2 pt-2">
@@ -190,7 +193,7 @@ const WipeStudio = () => {
                         </svg>
                       </div>
                       <p className="ff_gilroy400 fw-normal fs_xsm text-white mb-0 ms-3">
-                        Technical Description & Discovery
+                        Support & Maintenance
                       </p>
                     </div>
                     <div className="d-flex align-items-center mt-2 pt-2">
@@ -212,12 +215,12 @@ const WipeStudio = () => {
                         </svg>
                       </div>
                       <p className="ff_gilroy400 fw-normal fs_xsm text-white mb-0 ms-3">
-                        Technical Description & Discovery
+                        Other WordPress Service
                       </p>
                     </div>
                   </div>
                 </Col>
-                <Col sm={12} md={6} lg={4}  data-aos="fade-left">
+                <Col sm={12} md={6} lg={4} data-aos="fade-left">
                   <div className="d-md-flex justify-content-end mt-4 mt-lg-0">
                     <img className="w-100" src={GirlImg} alt="GirlImg" />
                   </div>

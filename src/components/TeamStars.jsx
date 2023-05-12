@@ -6,9 +6,9 @@ const TeamStars = () => {
     <>
       <section className="py-5 featured_sec_bg_clr position-relative overflow- hidden">
         <Container className="py-md-5">
-          <Row className="flex-column-reverse flex-lg-row">
+          <Row className="flex-column-reverse flex-lg-row justify-content-between">
             <Col lg={6} data-aos="fade-right">
-              <div className="mt-3 mt-lg-0 text-center text-lg-start">
+              <div className="mt-4">
                 <h2 className="fw-normal ff_konexy fs_large">
                   Team Full of Stars{" "}
                 </h2>

@@ -6,18 +6,16 @@ const ProjectManagment = () => {
     <>
       <section className="overflow-hidden py-5">
         <Container>
-          <Row className="justify-content-center align-items-center">
+          <Row className=" align-items-center justify-content-between">
             <Col lg={6} data-aos="fade-right">
-              <div>
+              <div className="d-flex justify-content-center ">
                 <img className="w-100" src={Manager_img} alt="Manager_img" />
               </div>
             </Col>
             <Col lg={6} data-aos="fade-left">
-              <div className="mt-4 text-center text-lg-start">
-                <h2 className="ff-inter fs_large fw-semibold ">
-                  <span className="ff_konexy fs-large fw-normal text_blue">
-                    Agile WordPress
-                  </span>{" "}
+              <div className="mt-4 ms-xl-4">
+                <h2 className="ff_konexy fs-large fw-semibold ">
+                  <span className=" fw-normal text_blue">Agile WordPress</span> <br />
                   Development Project management
                 </h2>
                 <p className="fs_xsm ff_gilroy400 fw-normal text_opacity_7 mt-3">
