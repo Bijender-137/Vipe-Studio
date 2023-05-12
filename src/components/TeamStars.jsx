@@ -4,11 +4,11 @@ import Vipe_Team from "../assets/img/png/vipe_full_team.png";
 const TeamStars = () => {
   return (
     <>
-      <section className="py-5 featured_sec_bg_clr position-relative overflow- hidden">
-        <Container className="py-md-5">
-          <Row className="flex-column-reverse flex-lg-row justify-content-between">
+      <section className="py-5 featured_sec_bg_clr position-relative overflow- hidden ">
+        <Container className="py-xxl-5">
+          <Row className="flex-column-reverse flex-lg-row  justify-content-center align-items-center align-items-lg-start">
             <Col lg={6} data-aos="fade-right">
-              <div className="mt-4">
+              <div className="pt-4 pt-lg-5">
                 <h2 className="fw-normal ff_konexy fs_large">
                   Team Full of Stars{" "}
                 </h2>
@@ -24,7 +24,7 @@ const TeamStars = () => {
                 </button>
               </div>
             </Col>
-            <Col lg={6} data-aos="fade-down">
+            <Col xs={10 } lg={6} data-aos="fade-down">
               <div className=" img_overflow ">
                 <img className="w-100" src={Vipe_Team} alt="Vipe_Team" />
               </div>

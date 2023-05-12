@@ -6,9 +6,9 @@ const ProjectManagment = () => {
     <>
       <section className="overflow-hidden py-5">
         <Container>
-          <Row className=" align-items-center justify-content-between">
-            <Col lg={6} data-aos="fade-right">
-              <div className="d-flex justify-content-center ">
+          <Row className=" align-items-center justify-content-center">
+            <Col xs={10} lg={6} data-aos="fade-right">
+              <div className="d-flex justify-content-center align-items-center ">
                 <img className="w-100" src={Manager_img} alt="Manager_img" />
               </div>
             </Col>

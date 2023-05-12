@@ -173,6 +173,8 @@
     background-color: #FEB168;
 }
 
+
+
 @media (max-width:575.98px) {
     :root {
         --fs-xsm: 14px;
@@ -205,10 +207,13 @@
         --fs-4xl: 30px;
         --fs-large: 38px;
     }
+
     .img_overflow {
         position: absolute !important;
+        transform: translateY(40px);
     }
 }
+
 @media (min-width:1400px) {
     :root {
         --fs-xsm: 16px;
@@ -216,5 +221,8 @@
         --fs-3xl: 35px;
         --fs-4xl: 40px;
         --fs-large: 48px;
+    }.img_overflow {
+        position: absolute !important;
+        transform: translateY(0px);
     }
 }

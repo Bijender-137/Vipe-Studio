@@ -14,11 +14,12 @@ const Featured = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    arrows:false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 6,
+          slidesToShow: 5,
           slidesToScroll: 3,
           infinite: true,
           dots: false,
@@ -59,33 +60,64 @@ const Featured = () => {
           <Slider {...settings}>
             <Col xs={6} sm={4} md={3} lg={2} className="mt-sm-5 mt-4">
               <div>
-                <img className="img_width_160" src={YahooNews} alt="YahooNews"/>
+                <img className="img_width_160 mx-auto" src={YahooNews} alt="YahooNews"/>
               </div>
             </Col>
             <Col xs={6} sm={4} md={3} lg={2} className="mt-sm-5 mt-4">
               <div>
                 <img
-                  className="img_width_160" src={YahooFinance} alt="YahooFinance" />
+                  className="img_width_160 mx-auto" src={YahooFinance} alt="YahooFinance" />
               </div>
             </Col>
             <Col xs={6} sm={4} md={3} lg={2} className="mt-5">
               <div>
-                <img className="img_width_160" src={YahooNews} alt="YahooNews" />
+                <img className="img_width_160 mx-auto" src={YahooNews} alt="YahooNews" />
               </div>
             </Col>
             <Col xs={6} sm={4} md={3} lg={2} className="mt-5">
               <div>
-                <img className="img_width_160" src={Topics} alt="Topics" />
+                <img className="img_width_160 mx-auto" src={Topics} alt="Topics" />
               </div>
             </Col>
             <Col xs={6} sm={4} md={3} lg={2} className="mt-5">
               <div>
-                <img className="img_width_160" src={YahooLyf} alt="YahooLyf" />
+                <img className="img_width_160 mx-auto" src={YahooLyf} alt="YahooLyf" />
               </div>
             </Col>
             <Col xs={6} sm={4} md={3} lg={2} className="mt-5">
               <div>
-                <img className="img_width_160" src={YahooNews} alt="YahooNews"/>
+                <img className="img_width_160 mx-auto" src={YahooNews} alt="YahooNews"/>
+              </div>
+            </Col>
+            <Col xs={6} sm={4} md={3} lg={2} className="mt-sm-5 mt-4">
+              <div>
+                <img className="img_width_160 mx-auto" src={YahooNews} alt="YahooNews"/>
+              </div>
+            </Col>
+            <Col xs={6} sm={4} md={3} lg={2} className="mt-sm-5 mt-4">
+              <div>
+                <img
+                  className="img_width_160 mx-auto" src={YahooFinance} alt="YahooFinance" />
+              </div>
+            </Col>
+            <Col xs={6} sm={4} md={3} lg={2} className="mt-5">
+              <div>
+                <img className="img_width_160 mx-auto" src={YahooNews} alt="YahooNews" />
+              </div>
+            </Col>
+            <Col xs={6} sm={4} md={3} lg={2} className="mt-5">
+              <div>
+                <img className="img_width_160 mx-auto" src={Topics} alt="Topics" />
+              </div>
+            </Col>
+            <Col xs={6} sm={4} md={3} lg={2} className="mt-5">
+              <div>
+                <img className="img_width_160 mx-auto" src={YahooLyf} alt="YahooLyf" />
+              </div>
+            </Col>
+            <Col xs={6} sm={4} md={3} lg={2} className="mt-5">
+              <div>
+                <img className="img_width_160 mx-auto" src={YahooNews} alt="YahooNews"/>
               </div>
             </Col>
           </Slider>

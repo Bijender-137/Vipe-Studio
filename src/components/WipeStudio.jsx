@@ -5,7 +5,7 @@ import GirlImg from "../assets/img/png/girl_img.png";
 const WipeStudio = () => {
   return (
     <>
-      <section className="py-3 py-sm-5 position-relative bg-black overflow-hidden mt-md-5">
+      <section className="py-5 py-sm-5 position-relative bg-black overflow-hidden mt-md-5">
         <Container>
           <Row className="pb-sm-5">
             <Col sm={12} lg={5}>
