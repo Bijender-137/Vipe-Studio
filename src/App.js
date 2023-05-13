@@ -13,6 +13,8 @@ import TeamStars from "./components/TeamStars";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SuccessGuide from "./components/SuccessGuide";
+import MyFooter from "./components/MyFooter";
+import PerformanceCheck from "./components/PerformanceCheck";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -31,6 +33,8 @@ function App() {
         <ProjectManagment />
         <TeamStars />
         <SuccessGuide />
+        <PerformanceCheck/>
+        <MyFooter />  
       </>
     </>
   );

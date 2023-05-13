@@ -7,8 +7,8 @@ const SuccessGuide = () => {
   return (
     <>
       <section className="mt-xl-5 py-5 overflow-hidden">
-        <Container className="py-lg-5">
-          <Row className="justify-content-center align-items-center">
+        <Container className="py-lg-5 ">
+          <Row className="justify-content-center align-items-center ">
             <Col xs={9} xl={4} data-aos="fade-right">
               <div className="me-2">
                 <img className="w-100" src={Cartoon_Img} alt="Cartoon_Img" />
