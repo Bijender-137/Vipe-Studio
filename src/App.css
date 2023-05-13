@@ -249,9 +249,13 @@
         --fs-large: 38px;
     }
 
+
+}
+
+@media (min-width:1200px) {
     .img_overflow {
         position: absolute !important;
-        transform: translateY(40px);
+        transform: translateY(60px);
     }
 }
 

@@ -25,7 +25,7 @@ const TeamStars = () => {
               </div>
             </Col>
             <Col xs={10 } lg={6} data-aos="fade-down">
-              <div className=" img_overflow ">
+              <div className=" img_overflow mb-xl-5 mb-xl-0">
                 <img className="w-100" src={Vipe_Team} alt="Vipe_Team" />
               </div>
             </Col>
