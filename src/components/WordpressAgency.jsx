@@ -49,11 +49,11 @@ const WordpressAgency = () => {
             <Col md={8} xl={6} className="position-relative mx-auto mt-4 mt-xl-0">
               <div className="bg_shadow position-absolute bottom-0 d-none d-md-block"></div>
               <div className="bg_shadow position-absolute hero_bg_shadow d-none d-md-block"></div>
-              <div className="d-flex flex-column position-absolute zn_1 pilot_bg_clr pilot_img_set d-none d-md-flex">
+              {/* <div className="d-flex flex-column position-absolute zn_1 pilot_bg_clr pilot_img_set d-none d-md-flex">
                 <img src={TrustStar} alt="TrustStar" />
                 <img src={Group_Star} alt="Group_Star" />
                 <p className="ff_gilroy400 fw-normal fs_xsm text-white">Rated 5.0 Excellent</p>
-              </div>
+              </div> */}
               <div className="mt-4 mt-lg-0">
                 <img
                   className="w-100 position -absolute team_img_set"
