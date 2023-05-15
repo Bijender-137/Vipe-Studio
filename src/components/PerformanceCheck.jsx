@@ -6,7 +6,7 @@ const PerformanceCheck = () => {
     <>
       <section className="footer_bg_linier">
         <Container>
-          <Row className="linier_bg_clr align-items-center mt-md-5 mt-lg-0 mx-1 mx-sm-0">
+          <Row className="bg_linear_color align-items-center mt-md-5 mt-lg-0 mx-1 mx-sm-0">
             <Col md={6}>
               <div>
                 <h2 className="fw-normal ff_konexy fs_large text-white">

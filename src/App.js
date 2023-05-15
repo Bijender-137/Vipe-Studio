@@ -15,17 +15,22 @@ import "slick-carousel/slick/slick-theme.css";
 import SuccessGuide from "./components/SuccessGuide";
 import MyFooter from "./components/MyFooter";
 import PerformanceCheck from "./components/PerformanceCheck";
+import MyNav from "./components/MyNav";
+import WordpressAgency from "./components/WordpressAgency";
 function App() {
   useEffect(() => {
     Aos.init({
       once: true,
-      duration: 3000,
+      duration: 1500,
     });
   }, []);
+
 
   return (
     <>
       <>
+        <MyNav />
+        <WordpressAgency />
         <Featured />
         <Integer />
         <WipeStudio />
@@ -33,8 +38,8 @@ function App() {
         <ProjectManagment />
         <TeamStars />
         <SuccessGuide />
-        <PerformanceCheck/>
-        <MyFooter />  
+        <PerformanceCheck />
+        <MyFooter />
       </>
     </>
   );
