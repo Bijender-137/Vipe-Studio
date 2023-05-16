@@ -49,7 +49,7 @@ const WordpressAgency = () => {
             <Col md={8} xl={6} className="position-relative mx-auto mt-4 mt-xl-0" data-aos="fade-left">
               <div className="bg_shadow position-absolute bottom-0 d-none d-md-block"></div>
               <div className="bg_shadow position-absolute hero_bg_shadow d-none d-md-block"></div>
-              <div className="mt-4 mt-lg-0">
+              <div className="mt-4">
                 <img
                   className="w-100 position -absolute team_img_set"
                   src={Agency_team}
@@ -58,7 +58,7 @@ const WordpressAgency = () => {
               </div>
             </Col>
           </Row>
-          <Row className="bg_clr_hero pb-5 pt-md-5 justify-content-between">
+          <Row className="bg_clr_hero pb-5 pt-md-5 justify-content-between mt-lg-5">
             <Col lg={6} data-aos="fade-right">
               <div>
                 <h2 className="ff_konexy fw-normal fs_3xl text-white">
