@@ -12,6 +12,10 @@ ul li a:hover img {
     transform: scale(1.3);
 }
 
+.text_strok:hover {
+    -webkit-text-stroke-width: 0.6px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -113,7 +117,7 @@ ul li a:hover img {
 }
 
 .btn_schedule:hover {
-    background-color: #FEB168;
+    background: #bc03ff;
 }
 
 .bg_clr_black {
@@ -193,24 +197,26 @@ ul li a:hover img {
 }
 
 .btn_explore:hover {
-    background-color: #FEB168;
+    background: #bc03ff;
 }
 
 .clr_gray {
     color: #878687;
 }
 
-.btn_category_2:hover {
-    background: #6022EA;
+.btn_category_1 {
+   
     border-radius: 80px;
     padding: 8px 16px;
-    color: white;
+    border: 1px solid #6022EA !important;
+    background-color: #6022EA;
+    color: #fff;
 }
 
 .btn_category_2 {
     border-radius: 80px;
     padding: 8px 16px;
-    border: 1px solid #6022EA;
+    border: 1px solid #6022EA !important;
     background-color: #FFFFFF;
     color: #6022EA;
     transition: 0.8s ease-in-out;
@@ -310,7 +316,7 @@ ul li a:hover img {
 
 .app_circel:hover {
     fill: white !important;
-    background-color: #FEB168;
+    background: #bc03ff;
     transform: scale(1.2);
 }
 
@@ -346,7 +352,7 @@ ul li a:hover img {
 }
 
 .btn_started:hover {
-    background-color: #FEB168;
+    background: #bc03ff;
 }
 
 .hero_bg_shadow {

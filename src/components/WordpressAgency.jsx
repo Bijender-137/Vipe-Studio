@@ -12,7 +12,7 @@ const WordpressAgency = () => {
       <section className="bg-black">
         <Container>
           <Row className="py-5">
-            <Col xl={6}>
+            <Col xl={6} data-aos="fade-right">
               <div>
                 <div className="d-flex">
                   <div className="hero_sec_line mt-4"></div>
@@ -46,14 +46,9 @@ const WordpressAgency = () => {
                 </div>
               </div>
             </Col>
-            <Col md={8} xl={6} className="position-relative mx-auto mt-4 mt-xl-0">
+            <Col md={8} xl={6} className="position-relative mx-auto mt-4 mt-xl-0" data-aos="fade-left">
               <div className="bg_shadow position-absolute bottom-0 d-none d-md-block"></div>
               <div className="bg_shadow position-absolute hero_bg_shadow d-none d-md-block"></div>
-              {/* <div className="d-flex flex-column position-absolute zn_1 pilot_bg_clr pilot_img_set d-none d-md-flex">
-                <img src={TrustStar} alt="TrustStar" />
-                <img src={Group_Star} alt="Group_Star" />
-                <p className="ff_gilroy400 fw-normal fs_xsm text-white">Rated 5.0 Excellent</p>
-              </div> */}
               <div className="mt-4 mt-lg-0">
                 <img
                   className="w-100 position -absolute team_img_set"
@@ -64,7 +59,7 @@ const WordpressAgency = () => {
             </Col>
           </Row>
           <Row className="bg_clr_hero pb-5 pt-md-5 justify-content-between">
-            <Col lg={6}>
+            <Col lg={6} data-aos="fade-right">
               <div>
                 <h2 className="ff_konexy fw-normal fs_3xl text-white">
                   Tell us more....
@@ -76,7 +71,7 @@ const WordpressAgency = () => {
                 </p>
               </div>
             </Col>
-            <Col sm={10} lg={5}>
+            <Col sm={10} lg={5} data-aos="fade-left">
               <div className="input_hero_section ">
                 <div className=" d-sm-flex align-items-center justify-content-between">
                   <input
@@ -91,7 +86,7 @@ const WordpressAgency = () => {
               </div>
               <div className="d-flex align-items-center justify-content-between mt-3">
                 <div className="d-flex align-items-center">
-                  <img src={Spinner} alt="Spinner" />
+                  <a href="#"><img src={Spinner} alt="Spinner" /></a>
                   <a
                     href="#"
                     className="fw-nonmal ff_gilroy400 fs_xsm text-white  ms-2"

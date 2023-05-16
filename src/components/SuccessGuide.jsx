@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Cartoon_Img from "../assets/img/png/cartoon_img.png";
 import Vipe_Img from "../assets/img/png/vipe_img.png";
 const SuccessGuide = () => {
-  const [first, setfirst] = useState(0);
+  const [first, setfirst] = useState(1);
   return (
     <>
       <section className="mt-xl-5 py-5 overflow-hidden">
@@ -26,23 +26,59 @@ const SuccessGuide = () => {
                     </p>
                     <div className="d-flex align-items-center gap-2 overflow-scroll example">
                       <div>
-                        <button className="fw-semibold ff_gilroy600 fs_xsm btn_category_2 flex_wrap">
+                        <button
+                          className={
+                            first === 1
+                              ? " fw-semibold ff_gilroy600 fs_xsm btn_category_1 flex_wrap"
+                              : "fw-semibold ff_gilroy600 fs_xsm btn_category_2 flex_wrap"
+                          }
+                          onClick={() => {
+                            setfirst(1);
+                          }}
+                        >
                           Category-1
                         </button>
                       </div>
                       <div>
-                        <button className="fw-semibold ff_gilroy600 fs_xsm btn_category_2 flex_wrap">
+                        <button
+                          className={
+                            first === 2
+                              ? "fw-semibold ff_gilroy600 fs_xsm btn_category_1 flex_wrap"
+                              : "fw-semibold ff_gilroy600 fs_xsm btn_category_2 flex_wrap"
+                          }
+                          onClick={() => {
+                            setfirst(2);
+                          }}
+                        >
                           Category-2
                         </button>
                       </div>
 
                       <div>
-                        <button className="fw-semibold ff_gilroy600 fs_xsm btn_category_2 flex_wrap">
+                        <button
+                          className={
+                            first === 3
+                              ? "fw-semibold ff_gilroy600 fs_xsm btn_category_1 flex_wrap"
+                              : "fw-semibold ff_gilroy600 fs_xsm btn_category_2 flex_wrap"
+                          }
+                          onClick={() => {
+                            setfirst(3);
+                          }}
+                        >
                           Category-3
                         </button>
                       </div>
                       <div>
-                        <button className="fw-semibold ff_gilroy600 fs_xsm btn_category_2 flex_wrap">
+                        <button
+                          className={
+                            first === 4
+                              ? "fw-semibold ff_gilroy600 fs_xsm btn_category_1 flex_wrap"
+                              : "fw-semibold ff_gilroy600 fs_xsm btn_category_2 flex_wrap"
+                          }
+                          onClick={() => {
+                            setfirst(4);
+                          }}
+                        >
                           Category-4
                         </button>
                       </div>
@@ -50,68 +86,206 @@ const SuccessGuide = () => {
                   </div>
                 </Col>
               </Row>
-              <Row className="ms-xl-3 justify-content-center mt-2">
-                <Col sm={6} md={4}>
-                  <div className="img_border p-3 mt-4" data-aos="fade-up">
-                    <img className="w-100" src={Vipe_Img} alt="Vipe_Img" />
-                    <h2 className="fw-semibold ff_gilroy600 fs_medium mt-3">
-                      Sit diam metus
-                    </h2>
-                    <p className="fw-normal ff_gilroy400 fs_xsm mb-0">
-                      Arcu amet, consectetur vel pellentesque mattis ipsum sed
-                      mattis sed.
-                    </p>
-                    <div className="mt-2">
-                      <a
-                        href="#"
-                        className="fw-semibold ff_gilroy600 fs_xsm learn_more_clr btn_clr"
-                      >
-                       Read More....
-                      </a>
+              <div
+                className={
+                  first === 1
+                    ? "ms-xl-3 justify-content-center mt-2 d-block"
+                    : "ms-xl-3 justify-content-center mt-2 d-none"
+                }
+              >
+                <Row>
+                  <Col sm={6} md={4}>
+                    <div className="img_border p-3 mt-4" data-aos="fade-up">
+                      <img className="w-100" src={Vipe_Img} alt="Vipe_Img" />
+                      <h2 className="fw-semibold ff_gilroy600 fs_medium mt-3">
+                        Sit diam metus
+                      </h2>
+                      <p className="fw-normal ff_gilroy400 fs_xsm mb-0">
+                        Arcu amet, consectetur vel pellentesque mattis ipsum sed
+                        mattis sed.
+                      </p>
+                      <div className="mt-2">
+                        <a
+                          href="#"
+                          className="fw-semibold ff_gilroy600 fs_xsm learn_more_clr btn_clr"
+                        >
+                          Read More....
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                </Col>
-                <Col sm={6} md={4}>
-                  <div className="img_border p-3 mt-4" data-aos="fade-up">
-                    <img className="w-100" src={Vipe_Img} alt="Vipe_Img" />
-                    <h2 className="fw-semibold ff_gilroy600 fs_medium mt-3">
-                      Sit diam metus
-                    </h2>
-                    <p className="fw-normal ff_gilroy400 fs_xsm mb-0">
-                      Arcu amet, consectetur vel pellentesque mattis ipsum sed
-                      mattis sed.
-                    </p>
-                    <div className="mt-2">
-                      <a
-                        href="#"
-                        className="fw-semibold ff_gilroy600 fs_xsm learn_more_clr btn_clr"
-                      >
-                       Read More....
-                      </a>
+                  </Col>
+                  <Col sm={6} md={4}>
+                    <div className="img_border p-3 mt-4" data-aos="fade-up">
+                      <img className="w-100" src={Vipe_Img} alt="Vipe_Img" />
+                      <h2 className="fw-semibold ff_gilroy600 fs_medium mt-3">
+                        Sit diam metus
+                      </h2>
+                      <p className="fw-normal ff_gilroy400 fs_xsm mb-0">
+                        Arcu amet, consectetur vel pellentesque mattis ipsum sed
+                        mattis sed.
+                      </p>
+                      <div className="mt-2">
+                        <a
+                          href="#"
+                          className="fw-semibold ff_gilroy600 fs_xsm learn_more_clr btn_clr"
+                        >
+                          Read More....
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                </Col>
-                <Col sm={6} md={4} data-aos="fade-left">
-                  <div className="img_border p-3 mt-4">
-                    <img className="w-100" src={Vipe_Img} alt="Vipe_Img" />
-                    <h2 className="fw-semibold ff_gilroy600 fs_medium mt-3">
-                      Sit diam metus
-                    </h2>
-                    <p className="fw-normal ff_gilroy400 fs_xsm mb-0">
-                      Arcu amet, consectetur vel pellentesque mattis ipsum sed
-                      mattis sed.
-                    </p>
-                    <div className="mt-2">
-                      <a
-                        href="#"
-                        className="fw-semibold ff_gilroy600 fs_xsm learn_more_clr btn_clr"
-                      >
-                       Read More....
-                      </a>
+                  </Col>
+                  <Col sm={6} md={4} data-aos="fade-left">
+                    <div className="img_border p-3 mt-4">
+                      <img className="w-100" src={Vipe_Img} alt="Vipe_Img" />
+                      <h2 className="fw-semibold ff_gilroy600 fs_medium mt-3">
+                        Sit diam metus
+                      </h2>
+                      <p className="fw-normal ff_gilroy400 fs_xsm mb-0">
+                        Arcu amet, consectetur vel pellentesque mattis ipsum sed
+                        mattis sed.
+                      </p>
+                      <div className="mt-2">
+                        <a
+                          href="#"
+                          className="fw-semibold ff_gilroy600 fs_xsm learn_more_clr btn_clr"
+                        >
+                          Read More....
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                </Col>
-              </Row>
+                  </Col>
+                </Row>
+              </div>
+              <div
+                className={
+                  first === 2
+                    ? "ms-xl-3 justify-content-center mt-2 d-block"
+                    : "ms-xl-3 justify-content-center mt-2 d-none"
+                }
+              >
+                <Row>
+                  <Col sm={6} md={4}>
+                    <div className="img_border p-3 mt-4" data-aos="fade-up">
+                      <img className="w-100" src={Vipe_Img} alt="Vipe_Img" />
+                      <h2 className="fw-semibold ff_gilroy600 fs_medium mt-3">
+                        Sit diam metus
+                      </h2>
+                      <p className="fw-normal ff_gilroy400 fs_xsm mb-0">
+                        Arcu amet, consectetur vel pellentesque mattis ipsum sed
+                        mattis sed.
+                      </p>
+                      <div className="mt-2">
+                        <a
+                          href="#"
+                          className="fw-semibold ff_gilroy600 fs_xsm learn_more_clr btn_clr"
+                        >
+                          Read More....
+                        </a>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col sm={6} md={4}>
+                    <div className="img_border p-3 mt-4" data-aos="fade-up">
+                      <img className="w-100" src={Vipe_Img} alt="Vipe_Img" />
+                      <h2 className="fw-semibold ff_gilroy600 fs_medium mt-3">
+                        Sit diam metus
+                      </h2>
+                      <p className="fw-normal ff_gilroy400 fs_xsm mb-0">
+                        Arcu amet, consectetur vel pellentesque mattis ipsum sed
+                        mattis sed.
+                      </p>
+                      <div className="mt-2">
+                        <a
+                          href="#"
+                          className="fw-semibold ff_gilroy600 fs_xsm learn_more_clr btn_clr"
+                        >
+                          Read More....
+                        </a>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+              <div
+                className={
+                  first === 4
+                    ? "ms-xl-3 justify-content-center mt-2 d-block"
+                    : "ms-xl-3 justify-content-center mt-2 d-none"
+                }
+              >
+                <Row>
+                  <Col sm={6} md={4}>
+                    <div className="img_border p-3 mt-4" data-aos="fade-up">
+                      <img className="w-100" src={Vipe_Img} alt="Vipe_Img" />
+                      <h2 className="fw-semibold ff_gilroy600 fs_medium mt-3">
+                        Sit diam metus
+                      </h2>
+                      <p className="fw-normal ff_gilroy400 fs_xsm mb-0">
+                        Arcu amet, consectetur vel pellentesque mattis ipsum sed
+                        mattis sed.
+                      </p>
+                      <div className="mt-2">
+                        <a
+                          href="#"
+                          className="fw-semibold ff_gilroy600 fs_xsm learn_more_clr btn_clr"
+                        >
+                          Read More....
+                        </a>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col sm={6} md={4}>
+                    <div className="img_border p-3 mt-4" data-aos="fade-up">
+                      <img className="w-100" src={Vipe_Img} alt="Vipe_Img" />
+                      <h2 className="fw-semibold ff_gilroy600 fs_medium mt-3">
+                        Sit diam metus
+                      </h2>
+                      <p className="fw-normal ff_gilroy400 fs_xsm mb-0">
+                        Arcu amet, consectetur vel pellentesque mattis ipsum sed
+                        mattis sed.
+                      </p>
+                      <div className="mt-2">
+                        <a
+                          href="#"
+                          className="fw-semibold ff_gilroy600 fs_xsm learn_more_clr btn_clr"
+                        >
+                          Read More....
+                        </a>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+              <div
+                className={
+                  first === 3
+                    ? "ms-xl-3 justify-content-center mt-2 d-block"
+                    : "ms-xl-3 justify-content-center mt-2 d-none"
+                }
+              >
+                <Row>
+                  <Col sm={6} md={4}>
+                    <div className="img_border p-3 mt-4" data-aos="fade-up">
+                      <img className="w-100" src={Vipe_Img} alt="Vipe_Img" />
+                      <h2 className="fw-semibold ff_gilroy600 fs_medium mt-3">
+                        Sit diam metus
+                      </h2>
+                      <p className="fw-normal ff_gilroy400 fs_xsm mb-0">
+                        Arcu amet, consectetur vel pellentesque mattis ipsum sed
+                        mattis sed.
+                      </p>
+                      <div className="mt-2">
+                        <a
+                          href="#"
+                          className="fw-semibold ff_gilroy600 fs_xsm learn_more_clr btn_clr"
+                        >
+                          Read More....
+                        </a>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
             </Col>
           </Row>
         </Container>
