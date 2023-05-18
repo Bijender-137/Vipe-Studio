@@ -3,7 +3,7 @@ import { Container, Nav } from "react-bootstrap";
 import Nav_logo from "../assets/img/svg/nav_logo.svg";
 import Nav_global from "../assets/img/svg/nav_blobal.svg";
 import Cross_icon from "../assets/img/svg/cross_icon.jpg";
-
+import { Link } from "react-router-dom";
 const MyNav = () => {
   const [first, setfirst] = useState(true);
   if (first) {
@@ -15,7 +15,7 @@ const MyNav = () => {
     <>
       <section className="bg-black">
         <Nav>
-          <Container>
+          <Container > 
             <div className="d-flex align-items-center py-3 justify-content-between">
               <div className="d-flex align-items-center zn_1 ">
                 <a href="#">
@@ -43,7 +43,7 @@ const MyNav = () => {
                           class="dropdown-item ff_gilroy400 fw-normal fs_xsm"
                           href="#"
                         >
-                          Action
+                          Product
                         </a>
                       </li>
                       <li>
@@ -51,7 +51,7 @@ const MyNav = () => {
                           class="dropdown-item ff_gilroy400 fw-normal fs_xsm"
                           href="#"
                         >
-                          Another action
+                          Pricing
                         </a>
                       </li>
                       <li>
@@ -59,7 +59,7 @@ const MyNav = () => {
                           class="dropdown-item ff_gilroy400 fw-normal fs_xsm"
                           href="#"
                         >
-                          Something else here
+                          Resources
                         </a>
                       </li>
                     </ul>
@@ -79,7 +79,7 @@ const MyNav = () => {
                           class="dropdown-item ff_gilroy400 fw-normal fs_xsm"
                           href="#"
                         >
-                          Action
+                          Custom Wordpress
                         </a>
                       </li>
                       <li>
@@ -87,7 +87,7 @@ const MyNav = () => {
                           class="dropdown-item ff_gilroy400 fw-normal fs_xsm"
                           href="#"
                         >
-                          Another action
+                          Content Migration
                         </a>
                       </li>
                       <li>
@@ -95,19 +95,19 @@ const MyNav = () => {
                           class="dropdown-item ff_gilroy400 fw-normal fs_xsm"
                           href="#"
                         >
-                          Something else here
+                          Support and Maintenance
                         </a>
                       </li>
                     </ul>
                   </div>
                   <ul className="m-0 p-0">
                     <li className="ml_25">
-                      <a
-                        href="#"
+                      <Link
+                        to="/port"
                         className="ff_gilroy400 fw-normal fs_xsm text-white"
                       >
                         Portfolio
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                   <div class="dropdown ml_25">
@@ -125,7 +125,7 @@ const MyNav = () => {
                           class="dropdown-item ff_gilroy400 fw-normal fs_xsm"
                           href="#"
                         >
-                          Action
+                          Website
                         </a>
                       </li>
                       <li>
@@ -133,7 +133,7 @@ const MyNav = () => {
                           class="dropdown-item ff_gilroy400 fw-normal fs_xsm"
                           href="#"
                         >
-                          Another action
+                          Type
                         </a>
                       </li>
                       <li>
@@ -141,7 +141,7 @@ const MyNav = () => {
                           class="dropdown-item ff_gilroy400 fw-normal fs_xsm"
                           href="#"
                         >
-                          Something else here
+                          Industries
                         </a>
                       </li>
                     </ul>
@@ -236,50 +236,42 @@ const MyNav = () => {
                 <button className="text-white btn_schedule border-0 ff_gilroy400 fw-normal ms-md-4 fs_xsm ml_25">
                   Contact Us
                 </button>
-                <ul className="m-0 p-0">
+                <ul className="m-0 p-0 ">
                   <li>
-                    <a
-                      href="#"
-                      className="d-flex align-items-center ml_25 ms-md-4"
-                    >
+                    <div className="d-flex align-iteme-center ml_25 ms-md-4">
                       <img src={Nav_global} alt="Nav_global" />
-                      <div class="dropdown ps-1 ">
-                        <button
-                          class="bg-transparent text-white border-0 align-items-center d-flex btn-secondary dropdown-toggle ff_gilroy400 fw-normal fs_xsm"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Eng
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a
-                              class="dropdown-item ff_gilroy400 fw-normal fs_xsm"
-                              href="#"
-                            >
-                              Action
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item ff_gilroy400 fw-normal fs_xsm"
-                              href="#"
-                            >
-                              Another action
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item ff_gilroy400 fw-normal fs_xsm"
-                              href="#"
-                            >
-                              Something else here
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </a>
+                      <a href="#" className="d-flex align-items-center ps-2 ">
+                        <div class="dropdown">
+                          <button
+                            class="bg-transparent text-white border-0 align-items-center d-flex btn-secondary dropdown-toggle ff_gilroy400 fw-normal fs_xsm"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Eng
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a
+                                class="dropdown-item ff_gilroy400 fw-normal fs_xsm"
+                                href="#"
+                              >
+                                BG
+                              </a>
+                            </li>
+
+                            <li>
+                              <a
+                                class="dropdown-item ff_gilroy400 fw-normal fs_xsm"
+                                href="#"
+                              >
+                                Something else here
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </a>{" "}
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -290,6 +282,7 @@ const MyNav = () => {
                   setfirst(!first);
                 }}
               >
+                
                 <span className="nav_icon"></span>
                 <span className="nav_icon mt-2"></span>
                 <span className="nav_icon mt-2"></span>

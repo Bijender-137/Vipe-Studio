@@ -6,6 +6,7 @@ import Arrow from "../assets/img/svg/right_arrow.svg";
 import Calling from "../assets/img/svg/calling.svg";
 import Inbox from "../assets/img/svg/inbox_img.svg";
 import Home from "../assets/img/svg/home_img.svg";
+import { Link } from "react-router-dom";
 const MyFooter = () => {
   return (
     <>
@@ -243,7 +244,7 @@ const MyFooter = () => {
         <section className="pb-4">
           <div className="gray_line "></div>
           <Container>
-            <Row className="mt-4">
+            <Row className="pt-5">
               <Col lg={8}>
                 <h2 className="ff_gilroy400 fw-normal  text-white fs_sort">
                   © Vipe Studio 2016-2022
@@ -251,7 +252,7 @@ const MyFooter = () => {
                 <div className="d-flex align-items-center mt-3">
                   <a
                     href="#"
-                    className="ff_gilroy400 fw-normal  text-white fs_sort mb-0"
+                    className="ff_gilroy400 fw-normal  text-white fs_sort mb-0 text_strok"
                   >
                     Privacy
                   </a>
@@ -259,7 +260,7 @@ const MyFooter = () => {
                     <div className="footer_sort_line"></div>
                     <a
                       href="#"
-                      className="ff_gilroy400 fw-normal  text-white fs_sort mb-0 ms-2"
+                      className="ff_gilroy400 fw-normal  text-white fs_sort mb-0 ms-2 text_strok"
                     >
                       Careers
                     </a>
@@ -268,7 +269,7 @@ const MyFooter = () => {
                     <div className="footer_sort_line"></div>
                     <a
                       href="#"
-                      className="ff_gilroy400 fw-normal  text-white fs_sort mb-0 ms-2"
+                      className="ff_gilroy400 fw-normal  text-white fs_sort mb-0 ms-2 text_strok"
                     >
                       Media
                     </a>
@@ -277,7 +278,7 @@ const MyFooter = () => {
                     <div className="footer_sort_line"></div>
                     <a
                       href="#"
-                      className="ff_gilroy400 fw-normal  text-white fs_sort mb-0 ms-2"
+                      className="ff_gilroy400 fw-normal  text-white fs_sort mb-0 ms-2 text_strok"
                     >
                       Client Area
                     </a>

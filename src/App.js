@@ -17,6 +17,8 @@ import MyFooter from "./components/MyFooter";
 import PerformanceCheck from "./components/PerformanceCheck";
 import MyNav from "./components/MyNav";
 import WordpressAgency from "./components/WordpressAgency";
+import { Route, Routes } from "react-router";
+import Api from "./components/Api";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -25,12 +27,14 @@ function App() {
     });
   }, []);
 
-
   return (
     <>
       <>
-        <MyNav />
-        <WordpressAgency />
+        {/* <Api /> */}
+        <div className="d-flex flex-column vh_100_xl">
+          <MyNav />
+          <WordpressAgency />
+        </div>
         <Featured />
         <Integer />
         <WipeStudio />
@@ -40,6 +44,7 @@ function App() {
         <SuccessGuide />
         <PerformanceCheck />
         <MyFooter />
+
       </>
     </>
   );

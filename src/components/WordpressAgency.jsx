@@ -9,7 +9,7 @@ import Group_Star from "../assets/img/svg/group_starts.svg";
 const WordpressAgency = () => {
   return (
     <>
-      <section className="bg-black">
+      <section className="bg-black  d-flex flex-column align-items-center justify-content-center flex-grow-1 overflow-hidden">
         <Container>
           <Row className="py-5">
             <Col xl={6} data-aos="fade-right">
@@ -34,31 +34,46 @@ const WordpressAgency = () => {
                         Get Started
                       </button>
                       <div className="d-flex align-items-center mt-3 mt-sm-0">
-                        <a href="#" className="ms-sm-4">
+                        <a
+                          href="#"
+                          className="ms-sm-4 d-flex align-items-center"
+                        >
                           <img src={Play_btn} alt="Play_btn" />
+                          <p className="fw-normal ff_gilroy400 fs_xsm text-white text_opacity_7 mb-0 ms-3">
+                            What is Vipe? (1min)
+                          </p>{" "}
                         </a>
-                        <p className="fw-normal ff_gilroy400 fs_xsm text-white text_opacity_7 mb-0 ms-3">
-                          What is Vipe? (1min)
-                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </Col>
-            <Col md={8} xl={6} className="position-relative mx-auto mt-4 mt-xl-0" data-aos="fade-left">
-              <div className="bg_shadow position-absolute bottom-0 d-none d-md-block"></div>
-              <div className="bg_shadow position-absolute hero_bg_shadow d-none d-md-block"></div>
-              <div className="mt-4">
+            <Col
+              md={8}
+              xl={6}
+              className="position-relative mx-auto mt-4 mt-xl-0"
+              data-aos="fade-left"
+            >
+              <div className="bg_shadow position-absolute bottom-0 d-none d-md-block z_index_1"></div>
+              <div className="bg_shadow position-absolute hero_bg_shadow d-none d-md-block z_index_1"></div>
+              <div className="mt-4  position- ">
                 <img
-                  className="w-100 position -absolute team_img_set"
+                  className="w-100  team_img_set"
                   src={Agency_team}
                   alt="Agency_team"
                 />
+                <div className="box d-flex flex-column mb-2 mb-sm-3 ms-4 ms-sm-4 ms-xl-5 mb-xl-5 position-absolute bottom-0 start-0">
+                  <img className="w_127" src={TrustStar} alt="TrustStar" />
+                  <img className="w_180" src={Group_Star} alt="Group_Star" />
+                  <p className="ff_gilroy400 fw-normal fs_xsm text-white mb-0 mb-sm-2">
+                    Rated 5.0 Excellent
+                  </p>
+                </div>
               </div>
             </Col>
           </Row>
-          <Row className="bg_clr_hero pb-5 pt-md-5 justify-content-between mt-lg-5">
+          <Row className="bg_clr_hero py-5 pt-md-5 justify-content-between mt-lg-5">
             <Col lg={6} data-aos="fade-right">
               <div>
                 <h2 className="ff_konexy fw-normal fs_3xl text-white">
@@ -76,23 +91,32 @@ const WordpressAgency = () => {
                 <div className=" d-sm-flex align-items-center justify-content-between">
                   <input
                     type="text"
-                    className=" ff_gilroy400 fw-normal fs_xsm text-white text_opacity_7 border-0 input_clr"
+                    className=" ff_gilroy400 fw-normal fs_xsm text- white text_opacity_7 border-0 input_clr"
                     placeholder="What do you need assistance with?		"
                   />
-                  <a href="#">
-                    <img className="pe-1 pe-sm-4" src={Search} alt="Search" />
-                  </a>
+                  <img
+                    className="pe-1 pe-sm-4 cursor_pointer"
+                    src={Search}
+                    alt="Search"
+                  />
                 </div>
               </div>
               <div className="d-flex align-items-center justify-content-between mt-3">
                 <div className="d-flex align-items-center">
-                  <a href="#"><img src={Spinner} alt="Spinner" /></a>
-                  <a
-                    href="#"
-                    className="fw-nonmal ff_gilroy400 fs_xsm text-white  ms-2"
-                  >
-                    or send us an inquire?
+                  <a href="#">
+                    <img src={Spinner} alt="Spinner" />
                   </a>
+                  <div className="d-flex align-items-center justify-content-center">
+                    <p className="fw-nonmal ff_gilroy400 fs_xsm text-white  ms-2 mb-0">
+                      or
+                    </p>
+                    <a
+                      href="#"
+                      className="fw-nonmal ff_gilroy400 fs_xsm text-white  ms-2"
+                    >
+                      send us an inquire?
+                    </a>
+                  </div>
                 </div>
                 <a
                   href="#"
