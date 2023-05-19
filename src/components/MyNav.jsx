@@ -15,7 +15,7 @@ const MyNav = () => {
     <>
       <section className="bg-black">
         <Nav>
-          <Container > 
+          <Container>
             <div className="d-flex align-items-center py-3 justify-content-between">
               <div className="d-flex align-items-center zn_1 ">
                 <a href="#">
@@ -282,7 +282,6 @@ const MyNav = () => {
                   setfirst(!first);
                 }}
               >
-                
                 <span className="nav_icon"></span>
                 <span className="nav_icon mt-2"></span>
                 <span className="nav_icon mt-2"></span>

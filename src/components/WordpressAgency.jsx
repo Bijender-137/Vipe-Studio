@@ -95,7 +95,7 @@ const WordpressAgency = () => {
                     placeholder="What do you need assistance with?		"
                   />
                   <img
-                    className="pe-1 pe-sm-4 cursor_pointer"
+                    className="pe-1 pe-sm-4 cursor_pointer ms-4"
                     src={Search}
                     alt="Search"
                   />
